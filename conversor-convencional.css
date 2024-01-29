@@ -1,0 +1,96 @@
+/* Importações e resets */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: url(./background.jpg);
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-container {
+    background-color: rebeccapurple;
+    width: 500px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+}
+
+.formulario-container form {
+    padding: 5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 2rem;
+}
+
+.input-padrao {
+    display: none;
+}
+
+.btn-processar, .upload-customizado {
+    color: white;
+    background: none;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+
+.upload-customizado:hover, .btn-processar:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-processar-desativado {
+    cursor: default;
+    color: white;
+    background: none;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    opacity: 0.2;
+    transition: all .3s;
+}
+
+.arquivo-selecionado {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.arquivo {
+    color: white;
+}
+
+/* rgb(68, 248, 68) */

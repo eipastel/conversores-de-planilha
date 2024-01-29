@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="./conversor-supremo.css">
+
+    <!-- Importando o Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Conversor Supremo</title>
+</head>
+<body>
+
+    <main class="container-formularios">
+        <div class="formulario-container">
+            <h1 class="title">Conversor Supremo</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label class="upload-customizado">
+                    <input class="input-padrao" type="file" id="inputFile" multiple onchange="mostrarNomeArquivo()" accept=".csv">
+                    Selecione o arquivo
+                </label>
+                <button class="btn-processar-desativado" type="button" onclick="processarArquivo()" id="btn-processar">Processar Arquivo</button>
+                <div class="arquivo-selecionado">
+                    <h2>Arquivo Selecionado:</h2>
+                    <p class="arquivo" id="arquivo">Nenhum arquivo selecionado.</p>
+                </div>
+            </form>
+            <a href="./index.html">Voltar para a tela inicial</a>
+        </div>
+    </main>
+    
+    <!-- Importando o Javascript -->
+    <script src="./conversor-supremo.js"></script>
+</body>
+</html>

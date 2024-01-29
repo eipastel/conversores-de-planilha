@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="./conversor-completa.css">
+
+    <!-- Importando o Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Conversor de Planilha</title>
+</head>
+<body>
+
+    <main>
+	<h2>(COMPLETA CPF E PIS)</h2>
+        <h1>Conversor de Planilha</h1>
+
+
+        <div class="formulario-container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label class="upload-customizado">
+                    <input class="input-padrao" type="file" id="inputFile" multiple onchange="mostrarNomeArquivo()" accept=".csv">
+                    Selecione o arquivo
+                </label>
+                <button class="btn-processar-desativado" type="button" onclick="processarArquivo()" id="btn-processar">Processar Arquivo</button>
+                <div class="arquivo-selecionado">
+                    <h2>Arquivo Selecionado:</h2>
+                    <p class="arquivo" id="arquivo">Nenhum arquivo selecionado.</p>
+                </div>
+            </form>
+            <a href="../../index.html">Voltar para a tela inicial</a>
+        </div>
+    </main>
+    
+    <!-- Importando o Javascript -->
+    <script src="./conversor-completa.js"></script>
+</body>
+</html>

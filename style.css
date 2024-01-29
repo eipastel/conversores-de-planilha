@@ -1,0 +1,54 @@
+/* Importações e resets */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+body {
+    background: url(./background.jpg);
+    color: white;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.opcao-menu-container {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.opcao-menu-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 400px;
+    height: 200px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.opcao-menu-container a:hover {
+    transform: scale(1.05);
+}
+
+.opcao-menu-container a h2, .opcao-menu-container a p{
+    color: white;
+}
